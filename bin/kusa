@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd $HOME/src/github.com/284km/kusa
+now=$(date +'%Y%m%d%H%M%S')
+echo $now > Kusafile
+git add Kusafile
+git commit -m $now
+git push origin
